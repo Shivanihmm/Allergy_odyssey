@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    text-align: center;
+  }
+  
+  .navbar {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color:none; 
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px 20px; 
+    z-index: 1000; 
+  }
+  
+  .logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: white  ;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    padding: 14px 16px;
+  }
+  
+  nav ul {
+    display: flex; 
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+  }
+  
+  nav li {
+    padding: 0 20px;
+  }
+  
+  .navdiv {
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 14px 16px;
+    color: white; 
+  }
+  
+  .navdiv:hover {
+    background-color: black;
+    color: #dc6414;
+    border-radius: 45%;
+  }
+  
+  .swiper-container {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .swiper-slide {
+    background-color: #fcfcfc;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: none;
+    font-size: 24px;
+    position: relative;
+  }
+  
+  .swiper-container {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .swiper-slide {
+    background-color: #fcfcfc;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fcfcfc;
+    font-size: 24px;
+    position: relative;
+  }
+  
+  .swiper-slide-cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: transparent no-repeat 50% 50% / cover;
+  }
+  
+  .swiper-slide .slide-01 {
+    background-image: url("images/Indian\ cruisine.jpg");
+    transform-origin: 50% 50%;
+  }
+  
+  .swiper-slide .slide-02 {
+    background-image: url("images/Italian\ food.jpg");
+    transform-origin: 50% 50%;
+  }
+  
+  .swiper-slide .slide-03 {
+    background-image: url("images/japanese_cuisine.jpg");
+    transform-origin: 50% 50%;
+  }
+  
+  .swiper-slide .slide-04 {
+    background-image: url("images/arabic_cuisine.jpg");
+    transform-origin: 50% 50%;
+  }
+  
+  .swiper-slide .slide-05 {
+    background-image: url("images/korean_cuisine.jpg");
+    transform-origin: 50% 50%;
+  }
+  
+  .swiper-slide .slide-06 {
+    background-image: url("images/mexican_cuisine.jpg");
+    transform-origin: 50% 50%;
+  }
+  
+  .swiper-scale-effect .swiper-slide-cover {
+    transition-timing-function: linear;
+    transition-duration: 30s;
+    transform: scale(1);
+  }
+  
+  .swiper-scale-effect .swiper-slide.swiper-slide-active .swiper-slide-cover {
+    transform: scale(1.3);
+  }
+  
+  :root {
+    --swiper-pagination-bottom: 40px;
+    --swiper-theme-color: rgba(252, 252, 252, 0.85) !important;
+  }
+  
+  .swiper-lazy-preloader-white {
+    --swiper-preloader-color: #fcfcfc;
+  }
+  
+  .swiper-lazy-preloader-black {
+    --swiper-preloader-color: #262626;
+  }
+  
+  .swiper-button-prev,
+  .swiper-button-next {
+    background: transparent;
+    opacity: 0.55;
+    --swiper-navigation-color: rgba(252, 252, 252, 0.85);
+    transition: opacity 0.3s ease, color 0.3s ease;
+  }
+  
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background: transparent;
+    opacity: 0.85;
+    --swiper-navigation-color: #fcfcfc;
+  }
+  
+  .swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10px)) !important;
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 10px)) !important;
+    box-shadow: inset 1px 1px 1px rgba(38, 38, 38, 0.85);
+    background: var(--swiper-pagination-bullet-inactive-color, rgba(252, 252, 252, 0.85)) !important;
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.55) !important;
+    --swiper-pagination-bullet-horizontal-gap: 6px;
+  }
+  
+  .swiper-pagination-bullet-active {
+    box-shadow: inset 1px 1px 1px rgba(38, 38, 38, 0.85);
+    background: var(--swiper-pagination-bullet-active-color, rgba(252, 252, 252, 0.85)) !important;
+    opacity: var(--swiper-pagination-bullet-active-opacity, 0.85) !important;
+    --swiper-pagination-bullet-horizontal-gap: 10px;
+  }
+  .h1{
+    font-size: large;
+    color: #dc6414;
+    
+  }
+  .button {
+    background-color: transparent; /* Green */
+    border: white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+    border-width: 1.5px;
+    -ms-transform: translateY(-20%);
+    transform: translateY(150px) translateX(10%)
+    
+    
+  }
+  button:hover {
+    background-color: black; 
+    color: #dc6414; 
+    
+  }
